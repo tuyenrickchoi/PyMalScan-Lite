@@ -1,4 +1,4 @@
- PyMalScan-Lite
+<img width="1206" height="841" alt="image" src="https://github.com/user-attachments/assets/8fb3efcc-0564-44e6-8cac-3d5addf95d3f" /> PyMalScan-Lite
 PyMalScan-Lite là một công cụ phân tích tĩnh (Static Analysis) nhẹ dành cho các tệp thực thi Windows (PE files). Ứng dụng giúp nhận diện các bất thường về bảo mật và đánh giá mức độ rủi ro của tệp mà không cần thực thi mã code.
 
  Tính năng nổi bật
@@ -21,6 +21,22 @@ Python 3.8+
 
 Thư viện: pefile, PyQt5, requests
 
+Cây Thư mục
+PyMalScan-Lite/
+├── api/
+│   └── virustotal_api.py      # Kết nối và truy vấn API VirusTotal
+├── database/
+│   ├── db_manager.py          # Quản lý cơ sở dữ liệu (SQLite)
+│   └── signatures.db          # File database chứa mã nhận diện (signatures)
+├── scanner/
+│   ├── hash_scanner.py        # Quét mã độc dựa trên mã băm (MD5/SHA256)
+│   └── pe_analyzer.py         # Phân tích cấu trúc file thực thi (PE file)
+├── utils/
+│   └── file_utils.py          # Các công cụ hỗ trợ xử lý file
+├── gui_main.py                # Giao diện người dùng (PyQt/Tkinter)
+├── main.py                    # Điểm chạy chương trình chính (CLI)
+└── requirements.txt           # Danh sách thư viện cần thiết
+
  Cài đặt & Sử dụng
 Tải mã nguồn:
 
@@ -38,7 +54,8 @@ Chạy ứng dụng:
 Bash
 
 # Giao diện đồ họa (GUI)
-python gui/main_window.py
+<img width="1206" height="841" alt="image" src="https://github.com/user-attachments/assets/a683b947-5110-4dea-b2c0-ade34d1c8b04" />
+
 
 # Giao diện dòng lệnh (CLI)
 python main.py
