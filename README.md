@@ -21,7 +21,9 @@ Python 3.8+
 
 Thư viện: pefile, PyQt5, requests
 
-Cây Thư mục
+## Repository Structure
+
+```
 PyMalScan-Lite/
 ├── api/
 │   └── virustotal_api.py      # Kết nối và truy vấn API VirusTotal
@@ -36,7 +38,7 @@ PyMalScan-Lite/
 ├── gui_main.py                # Giao diện người dùng (PyQt/Tkinter)
 ├── main.py                    # Điểm chạy chương trình chính (CLI)
 └── requirements.txt           # Danh sách thư viện cần thiết
-
+```
  Cài đặt & Sử dụng
 Tải mã nguồn:
 
